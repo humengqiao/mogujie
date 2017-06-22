@@ -1,0 +1,381 @@
+@charset "utf-8";
+
+/*头部search-wrapper开始*/
+	#search-wrapper{
+		font-size:0;
+	}
+
+	#search-wrapper .w-1200{
+		position:relative;
+	}
+
+	#search-wrapper .logo,#search-wrapper .search,#search-wrapper .scan-code{
+		display:inline-block;
+		*zoom:1;
+		*display:inline;
+	}
+	
+	#search-wrapper .logo{
+		width:240px;
+		height:90px;
+		background:url(../images/logo.png) no-repeat left center;
+		vertical-align:top;
+	}
+
+	#search-wrapper .search{
+		width:482px;
+    	height:70px;
+    	margin-left:120px;
+    	padding-top:20px;
+	}
+
+	#search-wrapper .search .hot-goods{
+		width:482px;
+	    height:20px;
+	    overflow:hidden;
+	    margin-top:5px;
+	    font-size:0;
+	}
+
+	#search-wrapper .search .hot-goods>a{
+		display:inline-block;
+		*zoom:1;
+		*display:inline;
+		height:20px;
+	    line-height:20px;
+	    margin:0 12px 0 0;
+	    font-size:12px;
+	    color:#666;
+	}
+
+	#search-wrapper .search .hot-goods>a:hover{
+		color:#f07;
+	}
+
+	#search-wrapper .search .hot{
+		color:#f07 !important;
+	}
+
+	#search-wrapper .scan-code{
+		position:absolute;
+		right:0;
+		top:0;
+		height:90px;
+    	width:220px;
+	}
+
+	#search-wrapper .scan-code>img{
+		height:100%;
+	}
+/*头部search-wrapper结束*/
+
+/*头部主题市场部分开始*/
+	#nav-wrapper{
+		height:40px;
+		border-bottom:2px solid #FF0076;
+		font-size:0;
+	}
+
+	#nav-wrapper .theme-market{
+		position:relative;
+		display:inline-block;
+		*zoom:1;
+		*display:inline;
+		width:257px;
+		height:40px;
+		background:url(../images/theme-market.png) no-repeat;
+	}
+
+	#nav-wrapper .theme-market>a{
+		display:block;
+		margin-left:47px;
+		height:40px;
+	    line-height:40px;
+	    font-size:18px;
+	    color:#fff;
+	}
+
+	#nav-wrapper a:hover{
+		text-decoration:none;
+	}
+
+	#nav-wrapper .link-wrapper{
+		display:inline-block;
+		*zoom:1;
+		*display:inline;
+		height:100%;
+		font-size:0;
+	}
+
+	#nav-wrapper .link-wrapper>a{
+		display:inline-block;
+		*zoom:1;
+		*display:inline;
+		height:20px;
+		width:140px;
+		margin-top:10px;
+		border-right:1px solid #ddd;
+		text-align:center;
+		line-height:20px;
+		font-size:18px;
+		color:#333;
+	}
+
+	#nav-wrapper .link-wrapper>a:hover{
+		color:#FF0076;
+	}
+
+	#nav-wrapper .link-wrapper>a:last-child{
+		border-right:none;
+	}
+
+	#nav-wrapper .theme-market .theme-list{
+		position:absolute;
+		left:0;
+		top:42px;
+		width:256px;
+		height:440px;
+		background-color:rgba(255,255,255,.8);
+		z-index:1;
+	}
+
+	#nav-wrapper .theme-market .theme-list li{
+		overflow:hidden;
+		margin:0;
+    	padding:5px 0 5px 18px;
+    	height:31px;
+    	border-left:2px solid transparent;
+    	font-family:'PingFang SC';
+    	box-sizing:border-box;
+	}
+
+	#nav-wrapper .theme-market .theme-list li:hover{
+		background-color:#fff;
+		border-color:#FF0076;
+	}
+
+	#nav-wrapper .theme-market .theme-list a:hover{
+		text-decoration:underline;
+	}
+
+	#nav-wrapper .theme-market .theme-list li:first-child{
+		margin-top:4px;
+	}
+
+	#nav-wrapper .theme-market .theme-list li>a{
+		font-size:12px;
+		color:#666;
+		font-weight:normal;
+	}
+
+	#nav-wrapper .theme-market .theme-list li>a:first-child{
+		margin-left:0;
+	}
+
+	#nav-wrapper .theme-market .theme-list li>a:nth-child(2){
+		margin-left:12px;
+	}
+
+	#nav-wrapper .theme-market .theme-list .stress{
+	    font-size:14px;
+	    font-weight:600;
+	    color:#333;
+	}
+
+	#nav-wrapper .theme-market .theme-list .blank{
+		display:inline-block;
+		width:0;
+		height:12px;
+		font-size:0;
+		border-left:1px solid rgba(255, 255, 255, 0.15);
+		border-left:1px solid #ffffff\9;
+    	margin:6px 9px 0;
+    	vertical-align:top;
+	}
+
+	#nav-wrapper .theme-market .theme-list .icon-hot{
+		display:inline-block;
+		width:12px;
+	    height:13px;
+	    margin-left:2px;
+	    background-image:url(../images/theme-market-hot.png);
+	    background-repeat:no-repeat;
+	    background-size:100%;
+	}
+/*头部主题市场部分结束*/
+
+/*头部轮播部分开始*/
+	#slider-wrapper{
+		height:440px;
+		overflow:hidden;
+		transition:all 1s;
+	}
+
+	#slider-wrapper .slider{
+		position:relative;
+		float:left;
+		width:778px;
+		height:440px;
+		margin-left:257px;
+	}
+
+	#slider-wrapper .slider>ul{
+		position:relative;
+		height:100%;
+	}
+
+	#slider-wrapper .slider li{
+		position:absolute;
+		opacity:0;
+		z-index:0;
+		transition:all 1s;
+	}
+
+	#slider-wrapper .slider a{
+		display:block;
+		height:100%;
+	}
+
+	#slider-wrapper .indicator{
+		position:absolute;
+		left:0;
+		bottom:10px;
+		width:100%;
+	    z-index:10;
+	    text-align:center;
+	}
+
+	#slider-wrapper .indicator>a{
+		display:inline-block;
+		*zoom:1;
+		*display:inline;
+		width:20px;
+	    height:20px;
+	    padding:0;
+	    background-image:url(../images/sprit2.png);
+	    background-repeat:no-repeat;
+	    background-position:-97px -18px;
+	}
+
+	#slider-wrapper .indicator>a.active{
+		background-position:-157px -18px;
+		animation:rotate 3000ms cubic-bezier(0.6, 0, 0.6, 1) 1;
+	}
+
+	@keyframes rotate{
+		from {transform:rotate(0deg);}
+		to {transform:rotate(360deg);}
+	}
+
+	#slider-wrapper .member-center{
+		float:left;
+    	width:165px;
+    	height:420px;
+    	margin-top:10px;
+    	font-family:"PingFang SC", Georgia, "Times New Roman", "Microsoft YaHei", "å¾®è½¯é›…é»‘", STXihei, "åŽæ–‡ç»†é»‘", serif;
+    	text-decoration:none;
+	}
+
+	#slider-wrapper .member-center a:hover{
+		text-decoration:none;
+	}
+
+	#slider-wrapper .member-center .top{
+		position:relative;
+		height:195px;
+		padding-top:10px;
+		background-color:rgba(255,255,255,.8);
+	}
+
+	#slider-wrapper .member-center .top .avatar{
+		display:block;
+		text-decoration:none;
+		width:72px;
+		height:72px;
+		margin:0 auto;
+		border-radius:100%;
+		background:#ff94c6 url(../images/member-center-avatar.png) no-repeat center;
+		background-size:30px;
+	}
+
+	#slider-wrapper .member-center .top .welcome{
+		overflow:hidden;
+		width:100%;
+	    margin:5px 0 7px 0;
+	    text-align:center;
+	    white-space:nowrap;
+	    text-overflow:ellipsis;
+	    font:normal 12px/1.5 'PingFang SC';
+	}
+
+	#slider-wrapper .member-center .welcome .name{
+		font-weight:bold;
+	}
+
+	#slider-wrapper .member-center .top .vip{
+		display:block;
+		margin:0 auto;
+	    width:72px;
+	    height:24px;
+	    line-height:24px;
+	    border:1px solid #ff5777;
+	    font-size:12px;
+	    color:#ff5777;
+	    text-align:center;
+	}
+
+	#slider-wrapper .member-center .top .vip:hover{
+		text-decoration:none;
+	}
+
+	#slider-wrapper .member-center .bottom{
+		width:165px;
+		height:205px;
+		margin-top:10px;
+		background-color:rgba(255,255,255,.8);
+	}
+
+	#slider-wrapper .member-center .bottom>a{
+		display:block;
+		height:100%;
+		overflow:hidden;
+	}
+
+	#slider-wrapper .member-center .ornaments{
+		height:75px;
+		margin:0 auto;
+		font:normal 12px/1.5 'PingFang SC';
+		line-height:1.4;
+		text-align:center;
+	}
+
+	#slider-wrapper .member-center .ornaments .title{
+		overflow:hidden;
+		padding-top:20px;
+		font-size:16px;
+		color:#333;
+		white-space:nowrap;
+		text-overflow:ellipsis;
+	}
+
+	#slider-wrapper .member-center .ornaments .desc{
+		overflow:hidden;
+		margin-top:5px;
+		font-size:14px;
+		color:#666;
+		white-space:nowrap;
+		text-overflow:ellipsis;
+	}
+
+	#slider-wrapper .member-center .bottom .pic{
+		overflow:hidden;
+		margin:0 auto;
+		width:130px;
+		height:130px;
+	}
+
+	#slider-wrapper .member-center .pic>img{
+		display:block;
+		height:100%;
+	}
+/*头部轮播部分结束*/

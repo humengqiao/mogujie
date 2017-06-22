@@ -1,0 +1,364 @@
+@charset "utf-8";
+
+/*公共部分开始*/
+	.w-1200{
+		width:1200px;
+		margin:0 auto;
+	}
+
+	.clearfix:before,.clearfix:after{
+		display:table;
+		content:'';
+	}
+
+	body,button,input,select,textarea{
+	    font:12px/1.6 tahoma,arial,sans-serif;
+	}
+
+	body,dd,dl,form,p{
+    	margin:0;
+	}
+
+	a,body,html{
+	    color:#333;
+	}
+
+	input,textarea {
+	    margin:0;
+	    padding:0;
+	    outline:none;
+	    border:none;
+   	}
+
+   	.fl{
+   		float:left;
+   	}
+
+   	.fr{
+   		float:right;
+   	}
+/*公共部分结束*/
+
+/*公共头部部分开始*/
+	header{
+		height:31px;
+		background-color:#E7E7E7;
+		border-bottom:1px solid #ddd;
+	}
+	
+	header h1{
+		float:left;
+		height:30px;
+		line-height:30px;
+		margin-left:20px;
+		vertical-align:top;
+	}
+
+	header h1>a{
+		display:block;
+		height:30px;
+		padding:0 20px;
+		background:url(../images/sprit1.png) no-repeat -4px -234px;
+	}
+
+	header a:hover{
+		text-decoration:none;
+	}
+
+	header nav{
+		float:right;
+		height:31px;
+		line-height:31px;
+		font-size:0;
+	}
+
+	header nav li{
+		display:inline-block;
+		*zoom:1;
+		*display:inline;
+		font-size:12px;
+		margin-right:15px;
+		height:31px;
+	}
+
+	header nav .icon-arrowdown{
+		position:absolute;
+		width:7px;
+    	height:5px;
+    	top:14px;
+    	right:0;
+    	background:url(../images/sprit1.png) no-repeat -4px -229px;
+	}
+
+	header nav .customer-service,header nav .my-shop{
+		position:relative;
+	}
+
+	header nav .line>a{
+		padding-left:15px;
+		border-left:1px solid #ddd;
+	}
+	
+	header nav .my-order{
+		background:url(../images/sprit1.png) no-repeat 16px -528px;
+	}
+
+	header nav .my-order>a,header nav .shop-cart>a{
+		padding-left:38px;
+	}
+
+	header nav .shop-cart{
+		background:url(../images/sprit1.png) no-repeat 8px -420px;
+	}
+
+	header nav .my-shop>a{
+		padding-left:35px;
+	}
+
+	header nav .customer-service,header nav .my-shop{
+		padding-right:10px;
+	}
+
+	header nav .my-shop{
+		margin-right:0;
+	}
+
+	header nav .my-shop{
+		background:url(../images/sprit1.png) 8px -566px no-repeat;
+	}
+/*公共头部部分结束*/
+
+/*公共搜索框部分开始*/
+	.form-wrapper{
+		width:480px;
+		height:34px;
+		border:1px solid #f07;
+		border-radius:0 6px 6px 0;
+		font-size:0;
+	}
+
+	.form-wrapper .select{
+		position:relative;
+		display:inline-block;
+		*zoom:1;
+		*display:inline;
+		width:60px;
+		font-size:12px;
+		text-align:center;
+		vertical-align:top;
+	}
+
+	.form-wrapper .select:hover>ul{
+		display:block;
+	}
+
+	.form-wrapper .select .now{
+		display:block;
+    	height:34px;
+    	line-height:34px;
+    	color:#f07;
+    	cursor:pointer;
+    	background-color:#fff;
+    	background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAEBAMAAABB42PDAAAAFVBMVEX/AHf/AHf/AHf/AHf/AHf/AHf/AHc+dKL7AAAABnRSTlMASWGAj+BF+9CzAAAAHElEQVQIHWNQTUtLYWAMSzNgYBBNZmBgYDRgAAAmCQLsUBsk5QAAAABJRU5ErkJggg==);
+    	background-repeat:no-repeat;
+    	background-position:center right;
+	}
+
+	.form-wrapper .select ul{
+		display:none;
+		position:absolute;
+	    top:102%;
+	    left:-1px;
+	    width:60px;
+	    background-color:#fff;
+	    border:1px solid #e5e5e5;
+	    border-top:none;
+	}
+
+	.form-wrapper .select ul a{
+		display:block;
+	    height:30px;
+	    line-height:30px;
+	    overflow:hidden;
+	    color:#f07;
+	    text-align:center;
+	}
+
+	.form-wrapper .select ul a:hover{
+		text-decoration:none;
+		background-color:rgb(255,238,244);
+	}
+
+	.form-wrapper form{
+		display:inline-block;
+		*zoom:1;
+		*display:inline;
+		overflow:hidden;
+		height:34px;
+	}
+
+	.form-wrapper form .search-input{
+	    overflow:hidden;
+	    width:305px;
+	    height:22px;
+	    line-height:22px;
+	    padding:6px 0 6px 10px;
+	    border:none;
+	    color:#999;
+	    font-size:12px;
+	    background-color:#fff;
+	}
+
+	.form-wrapper form .submit-btn{
+		overflow:hidden;
+		height:34px;
+	    line-height:34px;
+	    width:100px;
+	    margin-left:5px;
+	    background-color:#f07;
+	    background-image:linear-gradient(to right,#f25,#ff1581);
+	    border:none;
+	    cursor:pointer;
+	    font-size:16px;
+	    color:#fff;
+	    border-radius:0 5px 5px 0;
+	}
+/*公共搜索框部分结束*/
+
+/*公共底部部分开始*/
+	footer{
+		min-height:180px;
+		margin-top:0;
+		padding-top:50px;
+		padding-bottom:60px;
+		background-color:rgb(245,245,245);
+		font-size:12px;
+		font-family:"PingFang SC","Times New Roman","Microsoft YaHei","\5FAE\8F6F\96C5\9ED1",STXihei,"\534E\6587\7EC6\9ED1",serif;
+	}
+
+	footer .navigator-wrapper{
+		height:100px;
+		border-bottom:2px solid #FF5777;
+		font-size:0;
+	}
+
+	footer .navigator-wrapper .item{
+		display:inline-block;
+		*zoom:1;
+		*display:inline;
+		width:25%;
+		height:100px;
+	}
+
+	footer .navigator-wrapper .item .wrapper{
+		overflow:hidden;
+		width:78%;
+		padding-left:20px;
+	}
+
+	footer .navigator-wrapper .item h3{
+		margin-left:25px;
+		margin-bottom:10px;
+		height:25px;
+		line-height:25px;
+		color:#666;
+		font-size:14px;
+		font-weight:bold;
+	}
+
+	footer .navigator-wrapper .item ul{
+		font-size:0;
+	}
+
+	footer .navigator-wrapper .item li{
+		display:inline-block;
+		*zoom:1;
+		*display:inline;
+		width:80px;
+		height:20px;
+	}
+
+	footer .navigator-wrapper .item a{
+		display:block;
+		height:20px;
+		line-height:20px;
+		font-size:12px;
+		color:#999;
+	}
+
+	footer a:hover{
+		text-decoration:none;
+		color:#f57 !important;
+	}
+
+	footer .links{
+		margin-bottom:8px;
+    	line-height:27px;
+    	border-bottom:1px solid #ddd;
+	}
+
+	footer .links>p{
+		margin:5px 0;
+	}
+
+	footer .links a{
+		display:inline-block;
+		*zoom:1;
+		*display:inline;
+	}
+
+	footer .links a:hover{
+		text-decoration:none;
+		color:#f57;
+	}
+
+	footer .footer-divide{
+		margin:0 5px;
+    	font-weight:400;
+	}
+
+	footer .link-wrapper{
+		overflow:hidden;
+		min-height:20px;
+		margin-top:10px;
+	}
+
+	footer .link-wrapper ul{
+		float:left;
+		font-size:0;
+	}
+
+	footer .link-wrapper li{
+		display:inline-block;
+		*zoom:1;
+		*display:inline;
+		width:80px;
+		height:20px;
+		line-height:20px;
+		font-size:12px;
+	}
+
+	footer .link-wrapper .company-name{
+		float:left;
+		color:#999;
+	}
+
+	footer .copyright{
+		margin-bottom:8px;
+    	line-height:27px;
+	}
+
+	footer .copyright span,footer .copyright a{
+		color:#999;
+	}
+
+	footer .copyright a{
+		display:inline-block;
+		*zoom:1;
+		*display:inline;
+	}
+
+	footer .copyright a:hover{
+		color:#999 !important;
+	}
+/*公共底部部分结束*/
